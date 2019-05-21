@@ -1,0 +1,125 @@
+body{
+  background-color: #fee680;
+  margin: 0px;
+  padding: 0px;
+}
+.panda{
+  position: absolute;
+  top: 40%;
+  left: 43%;
+  height: 120px;
+  width: 80px;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 30%;
+}
+.face {
+  position: relative;
+  background-color:white;
+  border: 5px solid black;
+  height: 90px;
+  width: 110px;
+  border-radius: 50%;
+  bottom: 30px;
+  right: 20px;
+}
+.orelha-esquerdo, .orelha-direito{
+  position: relative;
+  background-color: black;
+  height: 25px;
+  width: 40px;
+  border-radius: 0px 0px 40px 40px;
+}
+.orelha-esquerdo{
+  transform: rotate(145deg);
+  bottom: 13px;
+  right: 8px;
+}
+.orelha-direito{
+  transform: rotate(-145deg);
+  left: 78px;
+  bottom: 38px;
+}
+.olho-esquerdo, .olho-direito{
+  position: relative;
+  background-color: black;
+  width: 28px;
+  height: 33px;
+  border-radius: 50%;
+}
+.olho-esquerdo{
+  bottom: 30px;
+  left: 10px;
+  transform: rotate(25deg);
+}
+.olho-direito{
+  bottom: 63px;
+  left: 72px;
+  transform: rotate(-25deg);
+}
+.bola-olho{
+  position: relative;
+  top: 8px;
+  left: 7px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
+}
+.nariz{
+  position: relative;
+  height: 8px;
+  width: 15px;
+  background-color: black;
+  border-radius: 15px;
+  bottom: 65px;
+  left: 48px;
+}
+.mao-esquerda, .mao-direita {
+  position: relative;
+  width: 25px;
+  height: 43px;
+  background-color: black;
+  border-radius: 30px;
+}
+.mao-esquerda{
+  transform: rotate(90deg);
+  bottom: 28px;
+  right: 12px;
+  animation:wave 3s infinite;
+  transform-origin: top;
+}
+@keyframes wave{
+  50%{
+    transform: rotate(120deg);
+  }
+}
+.mao-direita {
+  transform: rotate(-90deg);
+  bottom: 92px;
+  left: 89px;
+}
+.perna-esquerda,.perna-direita{
+  position: relative;
+  background-color: black;
+  width: 17px;
+  height: 25px;
+  border: 0px 0px 30px 30px;
+}
+.perna-esquerda{
+  bottom: 65px;
+  left: 15px;
+}
+.perna-direita{
+  bottom: 90px;
+  left: 49px;
+}
+.shadow{
+  position: relative;
+  background-color: rgba(0,0,0,0.2);
+  height: 30px;
+  width: 100px;
+  border-radius: 50%;
+  bottom: 105px;
+  right: 10px;
+}
